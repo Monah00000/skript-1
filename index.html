@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heronwater Fan Portal</title>
+    <link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=wVnO1xlJz7AuUMJGWwduRND_jCrRHnk3MH-j6eHbi03_Xwwo11Np59Ut0v16nA3ZKMVgL4t1wAvNEknG83pfeSyDqcCZ2XK2CvyRYKXx02j8_zCJW8t2vnU8Cja_l_DJpUEHXrQeHzeOCLUTqGS-NlgIeGk-AA1RvZNJBrSwA0rUE2jTXP83Wfo3eO4TDeUqbI6whQgsQkCSxtNoYun-G0sTFB_fOGgKTUrz2H7ZbAiOrVjw2Qf0jYLcSFjdhtO0NFF30l-AHHdWbjs7EQs0HPvvqGvjyo0pbfgZ5OXiL349o3XM2kNXtesSbsX_Qnot2C64yz-9FfJS2KNIKdO33qtC6yBE01bfhvF9cWulgmnFy15pYiK5Q2l-fegcQWdrSaV0qX4IMyjh4u0jFBapoXhpP0xD3_LzUB8HrMY0Rt6RScpt5ny2VVQdxQG7JlCkT5Id8FOvhrb8v9ZwWz1ra8IXvOj0Yhcsz-D50HCQeglhfKm8JV95UNI44paOH6EtB-XaTULrbski0yS4ci057IHwghI1-32qtBYgmVeTw9IK0IZyGncDaZfcFUGrZAGnesconDpdvWFOXabpX7tWMPZhgPU7U_WFJKKQAL8gf7mXMem8_SQtAp_dIulEBT41Gu6Ych5Cxv0EfcckTVivPcPKn_tE2muuRjdE71fCD29tP1qygAfu_aLwcM7O5NkH0WIkiTW6ArVRAtxaRqhAN4s0t1nJec5-Y-N_ctew8gkB3wOdB3HnYi_EZvav9fnf3SXgKTNJvCA6psorbpCX2FyVfinjLLYY44aa_9-el1EYxcj3Q9ID5FTBIle7fHOW7lZv8CG5BZE84TdI_j3ykTFVwWeRMDsbOLAy3rBBaS-1zvEWR-gLJb-JKP-soovsmyTucUYKjjOkAGc11N_QUL55p24Q6_B9QuOp4c2gMTzN6AcWbY2LfZPWCM255Ppb5JUAm47JhLmp-1ueOSUqFkSKiNhoVFm4hVc-MTtfVed2_pVuVSAAW0_HqfbKPqQjqQLbnxDoct9aeSVFuARnGFNtoUrrzud4G60QGdLMZxSFDJgaPI5I-pfdWTahuYZnsUhdbogIX4UnLKsATE0J8EF-OfHi4HOUD02N4D7nl8rg3V-LLAdzVtAEW0UhNXhzZ-FdfG4SDHK-aOn4UQEGAaRDcKMIXx9eVo_c6D6kep-2YSDRKgvZTgOzs5JpaOrSQgIvV16NWHr0zNbZILa-05t6cLXw9yXh3O61iwGRd-jXxanCUqkclrZpxOPg9zMnG8usth4PtPGN-5d5jjknCAL18PFFVBqhgzf76PaufoRXdiGWJOfWFg-rcrIjI4IhX0TJd6I-lDxgpun913zD51xshn1fpPOc6Gb7IqxvI9lSLHjrGgHP_ka9jlO0mmflc2z1aeBQoXmzaLjQsQpf4ip186QqnGEDrD0cPq6VxpMpmzhFlg_P7QIuNROBoiSE_slsonJvbYSg5luVWi9Z6xywYcyOyGnXamOVI2-kdSYXEe4qqIECqQwyRYkqfB0J_JX3OEUkBSzIqlJGeV_gtau9e9Rt3VbCKZBhaawXjEIttWlw7T_pXcejjnqRhN9ZhCn3cIK57L1qc0Kg5l8_jKhQs2eA_JEjg2kmTGilSdMC2JfUbFTcmp2ijod5IV38SrPSoiAK2yMC9BCJCw_ZQRwCzmGM2Kd3PwXiTiby9byL5czEQwIkxX4Q9azPgGBcmVX6kKxqjy6dk9kvgd22iw" nonce="c23cfc9d5dad24a5a411019a772d4f54" charset="UTF-8"></script></head>
+<body>
+
+    <div class="user-panel">
+    <div class="theme-toggle-wrapper">
+        <button id="theme-btn" class="theme-btn">Сменить тему</button>
+    </div>
+    <div class="user-info" id="user-info-block">
+        <span id="user-name-display" class="user-name-clickable">Войти</span>
+    </div>
+</div>
+
+<div id="result-modal" class="custom-modal">
+    <div class="modal-content">
+        <span class="close-modal" id="close-modal-btn">&times;</span>
+        <h3>Ваша статистика</h3>
+        <p id="modal-score-text">Вы еще не проходили тест.</p>
+    </div>
+</div>
+
+    <header class="main-header" id="top">
+        <div class="logo">
+            <div class="logo-circle"></div>
+        </div>
+        <nav class="main-nav">
+            <a href="#menu1">Меню 1</a>
+            <a href="#menu2">Меню 2</a>
+            <a href="#menu3">Menu 3</a>
+            <a href="test.html">Пройти тест</a>
+        </nav>
+        <div class="phone">Номер телефона 8-800-000-00-00</div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="title">OUR MINDS NEED </p>
+            <p class="title">MUSIC AS MUCH AS</p>
+            <div class="title pp">
+                <p class="red">OUR SOULS</p>
+                <p>NEED LOVE</p>
+            </div>
+            <div class="hero-button">
+                <button class="btn">Записаться</button>
+                <button class="btn">О нас</button>
+            </div>
+        </div>
+        <div class="image-overlays">
+            <div class="box box-left"></div>
+            <div class="box box-right"></div>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <h2>Новости компании</h2>
+        <div class="news-grid">
+            <article class="news-card">
+                <img class="card-img" src="images/Обложка_трека.png" alt="Новость 1">
+                <div class="card-text">Официальный релиз трека Heronwater состоялся на всех площадках. Трек уже бьет рекорды в чартах.</div>
+                <a href="https://genius.com/Pazniax-and-heronwater-working-lyrics" target="_blank" class="card-btn">Подробнее</a>
+            </article>
+
+            <article class="news-card">
+                <img class="card-img" src="images/Мерч.jpg" alt="Новость 2">
+                <div class="card-text">Эксклюзивный мерч в стиле techno-noir доступен для предзаказа. Лимитированная серия футболок.</div>
+                <a href="https://m.vk.com/wall-232556294_12" target="_blank" class="card-btn">Подробнее</a>
+            </article>
+
+            <article class="news-card">
+                <img class="card-img" src="images/ТУР.jpg" alt="Новость 3">
+                <div class="card-text">Стали известны города масштабного концертного тура. Билеты уже в продаже на официальном сайте.</div>
+                <a href="https://heronwatertour.com/" target="_blank" class="card-btn">Подробнее</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="menu1" class="content-section">
+        <div class="float-container">
+            <h3>Цифровая Империя Битмейкинга</h3>
+            <img src="images/Обложка_трека.png" alt="Медиа 1" class="float-img">
+            <p class="justify-text">Современная <span class="text-light">рэп-культура</span> давно переросла рамки обычного музыкального жанра, превратившись в доминирующую мировую индустрию и главный двигатель поп-культуры. Мы детально анализируем свежие релизы, разбираем сложные метафоры в текстах <span class="highlight">Heronwater</span>, оцениваем панчлайны и следим за развитием локальных сцен. От грязного звука мемфисских подвалов до вылизанного звучания стадионного трэпа — каждый стиль вносит свой вклад в эволюцию этой огромной музыкальной экосистемы.</p>
+            <p class="justify-text">За каждым громким платиновым синглом стоит колоссальная работа целой команды: продюсеров, битмейкеров, гострайтеров и звукорежиссеров. Сведение пробивного 808-го баса, ювелирная нарезка сэмплов и синкопированные перебежки хэви-хэтов требуют от музыкантов невероятного слуха и понимания трендов. Хип-хоп индустрия диктует свои правила, где умение артиста выдать запоминающийся флоу и создать вирусный хук ценится на вес золота, заставляя миллионы фанатов по всему миру зацикливать треки на репите.</p>
+            <p class="justify-text">С развитием стриминговых платформ кардинально изменились механизмы продвижения музыкального материала. Сегодня рэп-артистам больше не нужны крупные лейблы, чтобы заявить о себе и возглавить топ-чарты. Независимые дистрибьюторы позволяют загружать микстейпы напрямую со студии в сеть, стирая любые преграды между исполнителем и его преданной аудиторией. <span class="bold-marker">Алгоритмы рекомендаций</span> подхватывают яркие сниппеты, превращая локальные демки в масштабные гимны улиц за считанные часы.</p>
+            <p class="justify-text">Культура баттл-рэпа и фристайла заслуживает отдельного внимания, ведь именно там куется текстовое мастерство и проверяется характер. Умение мгновенно реагировать на выпады оппонента, рифмовать на ходу и выдавать хлесткие панчи без подготовки — это высший пилотаж словесного искусства. Многие современные суперзвезды начинали свой путь именно с уличных сайферов и локальных словесных поединков, где единственным оружием были харизма, микрофон и безупречное чувство ритма.</p>
+        </div>
+    </section>
+
+    <section id="menu2" class="content-section inline-block-layout">
+        <div class="inline-container">
+            <h3>Дропы и Мерч</h3>
+            <div class="ib-col ib-text">
+                <p class="justify-text">Культура баттл-рэпа и фристайла заслуживает отдельного внимания, ведь именно там куется текстовое мастерство и проверяется характер. Умение мгновенно реагировать на выпады оппонента, рифмовать на ходу и выдавать хлесткие панчи без подготовки — это высший пилотаж словесного искусства. Многие современные суперзвезды начинали свой путь именно с уличных сайферов и локальных словесных поединков, где единственным оружием были харизма, микрофон и безупречное чувство ритма.</p>
+                <p class="justify-text">Эволюция звука в хип-хопе происходит непрерывно, порождая уникальные поджанры вроде фонка, дрилла и плагга. Агрессивные скользящие басы великобританского дрилла диктуют мрачное, кинематографичное настроение, в то время как чилл-плагг возвращает слушателя к космическим, расслабленным мелодиям. Индустрия чутко реагирует на любые изменения в обществе, трансформируя уличные переживания, социальный протест и личные драмы исполнителей в мощные поэтические манифесты, резонирующие с миллионами сердец.</p>
+                <p class="justify-text">Визуальная эстетика рэп-индустрии играет не менее важную роль, чем сам аудиоконтент. Дизайн обложек альбомов, режиссура клипов, концертные визуальные эффекты и кастомный <span class="bold-marker">эксклюзивный мерч</span> формируют полноценную вселенную вокруг имени артиста. Мрачный стиль техно-нуар, неоновые шрифты и футуристичные образы в видеоработах подчеркивают агрессивный характер современного звучания, превращая каждый релиз в масштабное культурное событие, которое обсуждают в блогах и профильных медиа.</p>
+            </div>
+            <div class="ib-col ib-media">
+                <img src="images/Мерч.jpg" alt="Медиа 2">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu3" class="content-section flex-layout">
+        <h3 class="center-title">Анализ Треков и Код Экосистемы</h3>
+        <div class="section-container">
+            <div class="content-block media-block">
+                <img src="images/Тур.jpg" alt="Медиа 3">
+            </div>
+            <div class="content-block text-block">
+                <p class="justify-text">Концертные туры и масштабные фестивали остаются главным источником чистой энергии и заработка для рэп-сообщества. Слэм в толпе, взрывы пиротехники, тысячи светящихся экранов телефонов и синхронное скандирование текстов создают неповторимую атмосферу единства. Живые выступления требуют от рэпера колоссальной выносливости и умения управлять толпой, удерживая внимание стадиона на протяжении двух часов без потери качества подачи и дыхания на быстрых пассажах.</p>
+                <p class="justify-text">Не стоит забывать и о влиянии моды: хип-хоп полностью переписал законы стритвира. Оверсайз-худи, массивные кроссовки, дорогие цепи и дизайнерские коллаборации стали неотъемлемой частью рэп-культуры. Крупные модные дома выстраиваются в очередь, чтобы подписать контракты с топовыми хип-хоп исполнителями, признавая их главными иконами стиля современности. Одежда артиста транслирует его статус, музыкальные ориентиры и принадлежность к определенному лайфстайлу.</p>
+                <p class="justify-text">Студийная магия — это сердце всей индустрии, где абстрактные идеи превращаются в золотые диски. Эксперименты с вокальными процессорами, использование автотюна как полноценного музыкального инструмента и наложение плотных бэк-вокалов позволяют добиваться невероятной глубины трека. Рэп-продюсеры сегодня выступают в роли полноценных композиторов, создавая сложные многослойные аранжировки, которые легко конкурируют с классической и электронной музыкой по уровню проработки.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-block form-block">
+                        <h4>Оставить заявку</h4>
+                        <form>
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Расскажи о себе" required>
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="footer-block map-block">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=46.034257%2C51.533562&z=14" allowfullscreen="true"></iframe>
+                    </div>
+                </div>
+                <div class="footer-bot">
+                    <div class="footer-block contacts-block">Саратов</div>
+                    <div class="footer-block social-block">Мы в соцсетях</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Наверх">↑</a>
+    <script src="skript.js"></script>
+</body>
+</html>
